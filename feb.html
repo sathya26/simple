@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="S Cube Productions in T Nagar, Chennai offers high-end film production, Baselight color grading, 4K HDR workflows, and CGI services for advertisements and corporate videos.">
+    <meta name="keywords"
+        content="S Cube Productions, Video Production Chennai, Post Production Studio, Baselight DI Chennai, Corporate Video Makers, Film Editing Chennai, 4K HDR Grading">
+    <meta name="author" content="S Cube Productions">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.scubeproductions.co.in/">
+    <meta property="og:title" content="S Cube Productions - Don't Just Think, Finish.">
+    <meta property="og:description" content="Full-service production house in Chennai. Specialized in 4K HDR Baselight DI, and CGI.">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W155EYCZRC"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    <script>
+        window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-W155EYCZRC');
+    </script> 
+    <title>S Cube Productions </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <style>
+        /* HAMBURGER TO "X" ANIMATION */
+        .hamburger.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background: var(--sc-red); /* Turns red when closing */
+        }
+        
+        .hamburger.open span:nth-child(2) {
+        opacity: 0; /* Middle bar disappears */
+        }
+        
+        .hamburger.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background: var(--sc-blue); /* Turns blue when closing */
+        }
+        
+        /* MOBILE OVERLAY (Ensure this is in your CSS) */
+        .mobile-overlay {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(5, 5, 5, 0.98);
+        backdrop-filter: blur(20px);
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        
+        .mobile-overlay.active {
+        right: 0;
+        }
+
+    .scube-social-footer {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 20px;
+        align-items: center;
+    }
+    .scube-brand-icon img {
+        width: 35px; /* Adjust size as needed */
+        height: 35px;
+        transition: transform 0.3s ease;
+    }
+    .scube-brand-icon:hover img {
+        transform: scale(1.15);
+    }
+
+        :root {
+            --bg-dark: #050505;
+            --card-bg: #0f0f0f;
+            --white: #ffffff;
+            --sc-red: #b11226;
+            --sc-green: #6ec15e;
+            --sc-blue: #2b3691;
+            --text-gray: #b0b0b0;
+            --transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .social-icon-link {
+        text-decoration: none;
+        margin: 0 15px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+        }
+        
+        .social-icon-link i {
+        font-size: 30px;
+        color: #FFFFFF; /* Matches your white text */
+        transition: color 0.3s ease;
+        }
+        
+        .social-icon-link:hover i {
+        color: #D4AF37; /* Premium Gold Hover */
+        }
+        
+        .social-icon-link:hover {
+        transform: translateY(-5px); /* Subtle lift effect */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg-dark);
+            color: var(--white);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            width: 100%;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(5, 5, 5, 0.95);
+            backdrop-filter: blur(15px);
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, var(--sc-red), var(--sc-green), var(--sc-blue)) 1;
+        }
+
+        .logo img {
+            height: 100px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            margin-left: 25px;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* HAMBURGER STYLES */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+            z-index: 3000;
+        }
+
+        .hamburger span {
+            width: 30px;
+            height: 2px;
+            background: var(--white);
+            transition: 0.4s;
+        }
+
+        /* HAMBURGER OPEN ANIMATION */
+        #hamburgerIcon.open span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            background: var(--sc-red);
+        }
+
+        #hamburgerIcon.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        #hamburgerIcon.open span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            background: var(--sc-blue);
+        }
+
+        /* MOBILE OVERLAY */
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(5, 5, 5, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .mobile-overlay.active {
+            right: 0;
+        }
+
+        .mobile-links a {
+            font-size: 28px;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: block;
+            margin: 30px 0;
+            text-align: center;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: 4px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            overflow: hidden;
+        }
+
+        .hero-video-container {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .hero-video-container::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 6vw, 60px);
+            font-weight: 900;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: var(--sc-green);
+        }
+
+        .hero p {
+            border-left: 4px solid var(--sc-red);
+            padding-left: 20px;
+            margin-top: 20px;
+            color: var(--text-gray);
+            max-width: 600px;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 8%;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        h2 span {
+            color: var(--sc-red);
+        }
+
+        /* WHO WE ARE */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-gray);
+        }
+
+        .division-tag {
+            color: var(--sc-green);
+            font-weight: 800;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* WHAT WE DO / SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+        }
+
+        .service-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid var(--sc-green);
+            border-left: 2px solid var(--sc-green);
+        }
+
+        .service-card h3 {
+            color: var(--white);
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-card ul li {
+            font-size: 13px;
+            color: var(--text-gray);
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .service-card ul li::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: var(--sc-red);
+        }
+
+        /* PORTFOLIO LISTS */
+        .portfolio-section {
+            /* display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px; */
+            background: #080808;
+            padding: 60px 8%;
+        }
+
+        .list-container h4 {
+            color: var(--sc-green);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .list-container ul {
+            columns: 2;
+            list-style: none;
+        }
+
+        .list-container ul li {
+            color: var(--text-gray);
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        /* TECH SPECS */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tech-item {
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 20px;
+        }
+
+        .tech-item h5 {
+            color: var(--sc-blue);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .tech-item p {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+        /* CONTACT & MAP */
+        section { padding: 80px 8%; }
+        .map-container {
+        width: 100%; height: 450px; margin-top: 30px;
+        filter: grayscale(1) invert(90%) contrast(90%); /* Dark Mode effect */
+        border-radius: 12px; overflow: hidden; border: 1px solid #333;
+        }
+        .map-container iframe { width: 100%; height: 100%; border: 0; }
+        
+                /* WHATSAPP FLOAT */
+        /* WHATSAPP FLOATING BUTTON */
+        .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366; /* Official WhatsApp Green */
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        z-index: 3000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+        background-color: #128c7e; /* Darker WhatsApp Green on hover */
+        transform: scale(1.1);
+        }
+
+        /* Pulsing effect to draw attention */
+        .whatsapp-float::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid #25d366;
+        animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(1.5); opacity: 0; }
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 60px 8%;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .footer-logo {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    /* Optional: background-color: #f4f4f4; */
+}
+
+.logo-gif {
+    max-width: 100%; /* Adjust based on your logo size */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;
+    
+    /* Smooth fade-in as the GIF loads */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .about-grid,
+            .portfolio-section {
+                grid-template-columns: 1fr;
+            }
+
+            .list-container ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="mobile-overlay" id="mobileMenu">
+    <div class="mobile-links">
+        <a href="#about" onclick="toggleMenu()">Who We Are</a>
+        <a href="#do" onclick="toggleMenu()">What We Do</a>
+        <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+        <a href="#tech" onclick="toggleMenu()">Technology</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+</div>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.gif" alt="S Cube Productions" onerror="this.src='https://via.placeholder.com/150x60/000?text=S+CUBE'">
+        </div>
+
+        <div class="nav-links">
+            <a href="#about">Who We Are</a>
+            <a href="#do">What We Do</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#tech">Technology</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-overlay" id="mobileMenu">
+        <div class="mobile-links">
+            <a href="#about" onclick="toggleMenu()">Who We Are</a>
+            <a href="#do" onclick="toggleMenu()">What We Do</a>
+            <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+            <a href="#tech" onclick="toggleMenu()">Technology</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline>
+                <source src="images/SHOWREEL.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>legacy in post production more than <span>30+ years</span></h1>
+            <p>A fully equipped studio handling Production and Post-production requirements ranging from web casts to
+                full broadcast HDR and 4K prints.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Who We <span>Are</span></h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>S Cube Productions provides a creative atmosphere for all Production and
+                    post-production needs. We cater our professional services for television, film and audio-visual
+                    professionals. </p>
+                <p>A brainchild of professionals with 4 decades of experience. Located centrally in Chennai with parking
+                    flexibility, we are a one-stop production house catering to numerous companies in India.</p>
+            </div>
+            <div class="about-text">
+                <p>Our dedicated technicians provide a friendly environment and take responsibility to meet all
+                    deadlines. We handle requirements from web casts to full broadcast HDR and 4K prints.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="do" style="background: #080808;">
+        <h2>What We <span>Do</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Pre-Production</h3>
+                <ul>
+                    <li>Budgeting & Script writing</li>
+                    <li>Location hunt</li>
+                    <li>Artist Finalizing</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Production</h3>
+                <ul>
+                    <li>Shoot processing per Script</li>
+                    <li>Directors, Script Writers, Camera Operators</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Post-Production</h3>
+                <ul>
+                    <li>Color Grading ( DaVinci)</li>
+                    <li>CG (2D, 3D, Fluid Dynamics, Animation)</li>
+                    <li>Voice Recording & Dubbing</li>
+                    <li>DCP Conversion & Censor Coordination</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="portfolio">
+        <h2>Our <span>Portfolio</span></h2>
+       
+        <div class="portfolio-section">
+            <div class="list-container">
+                <h4>Advertisements</h4>
+                   <div class="logo-container">
+                <img src="images/LOGOS 30SEC.gif" width="100%" alt="Company Logo Animation" class="logo-gif">
+            </div>
+               
+            </div>
+          
+            <div class="list-container">
+                <h4>Corporate Videos</h4>
+                <div class="logo-container">
+                    <img src="images/LOGOS 20SEC.gif" width="100%" alt="Company Logo Animation" class="logo-gif">
+                </div>
+            </div>
+          
+        </div>
+    </section>
+ 
+    <section id="tech">
+        <h2>Technology <span>Expertise</span></h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <h5>Davanci Resolve (DI)</h5>
+                <p>Grading suite supporting 4K,8K and HDR workflows for a 'signature look'.</p>
+            </div>
+           
+        
+            <div class="tech-item">
+                <h5>DCP & CENSOR</h5>
+                <p>Mastering  coordination for Censor Certificates.</p>
+            </div>
+        </div>
+    </section>
+<a href="https://wa.me/919840266625?text=Hi%20S%20Cube%20Productions,%20I%20am%20interested%20in%20your%20services."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp">
+    <svg width="35" height="35" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+</a>
+    <section id="contact">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2>Let's <span>Connect</span></h2>
+            <p>No 92, GN Chetty Road, East Coast Chambers, First Floor, T Nagar, Chennai 600 017</p>
+            <p style="font-size: 24px; color: var(--sc-green); margin-top: 20px;">Mobile: +91 98402 66625</p>
+            <p>Website: www.scubeproductions.co.in</p>
+<div class="scube-social-footer" style="display: flex; justify-content: center; gap: 20px; padding: 20px;">
+
+        <a href="mailto:info@scubeproductions.co.in" title="Email Us" class="scube-brand-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Email">        </a>
+
+            <a href="https://www.instagram.com/scube.productions?igsh=MW50MXo3bnN2aGV0OA==" target="_blank" title="Instagram" class="scube-brand-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">            </a>
+
+            <a href="https://www.facebook.com/www.masterframes.in/" target="_blank" title="Facebook" class="scube-brand-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook">            </a>
+
+            <a href="https://youtube.com/@scubeproductions7542?si=jlUxjYtGzzGWhvEM" target="_blank" title="YouTube" class="scube-brand-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">            </a>
+
+            <a href="#" target="_blank" title="LinkedIn" class="scube-brand-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn">            </a>
+
+        </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.84074812847!2d80.2411!3d13.0425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267cd325a774b%3A0x676e6a1d4793774b!2sS%20Cube%20Productions!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin&q=S+Cube+Productions+Chennai"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="images/logo.gif" alt="S Cube Productions" class="footer-logo">
+        <p style="font-size: 10px; color: var(--text-gray);">© 2026 S CUBE PRODUCTIONS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+
+
+    <script>
+        function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const icon = document.getElementById('hamburgerIcon');
+    menu.classList.toggle('active');
+    icon.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : 'auto';
+}
+    </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('hamburgerIcon');
+            
+            // Toggle the 'active' class on the menu and 'open' class on the icon
+            menu.classList.toggle('active');
+            icon.classList.toggle('open');
+            
+            // Prevent background scrolling when menu is open
+            if (menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
